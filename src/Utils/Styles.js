@@ -21,9 +21,9 @@ export const animStyles = {
     superchargedGradient: {
         position: 'fixed',
         top: 510,
-        left: 350,
+        left: 500,
         margin: '0 auto',
-        width: '30%',
+        width: '20%',
         background: '-webkit-linear-gradient(225deg, #ff5ea7 36%, #010fcb 88%, #ff6530 220%)',
         'background-attachment': 'fixed',
         '-webkit-background-clip': 'text',

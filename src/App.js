@@ -14,16 +14,16 @@ function App() {
                     <AnimatedDiv
                         animProgress={[0, 0.05, 0.1]}
                         opacityProgress={[1, 0.8, 0]}
-                        scaleProgress={[0.38, 1.8, 1.8]}
-                        xPosProgress={[-200, -150, -150]}
-                        yPosProgress={[0, -950, -950]}
+                        scaleProgress={[0.5, 1.8, 1.8]}
+                        xPosProgress={[-200, 100, 100]}
+                        yPosProgress={[100, -850, -850]}
                         img={ipadSideImg}
                         myStyle={animStyles.ipadSide}
                     />
                     <AnimatedDiv
                         animProgress={[0, 0.05, 0.1]}
                         opacityProgress={[1, 0.8, 0]}
-                        scaleProgress={[1, 0.8, 0.6]}
+                        scaleProgress={[1, 0.9, 0.8]}
                         xPosProgress={[0, 0, 0]}
                         yPosProgress={[0, 0, 0]}
                         text={'iPad Pro'}
@@ -32,7 +32,7 @@ function App() {
                     <AnimatedDiv
                         animProgress={[0, 0.05, 0.1, 0.15]}
                         opacityProgress={[1, 1, 0.5, 0]}
-                        scaleProgress={[1, 0.8, 0.6, 0.6]}
+                        scaleProgress={[1, 0.9, 0.8, 0.8]}
                         xPosProgress={[0, 0, 0, 0]}
                         yPosProgress={[0, 0, 0, 0]}
                         text={
@@ -50,7 +50,7 @@ function App() {
                         opacityProgress={[0, 1, 0.7, 0.5, 0]}
                         scaleProgress={[20, 10, 1, 1, 1]}
                         yPosProgress={[-500, -200, 0, 0, 0]}
-                        top={'150px'}
+                        top={420}
                     />
                     <TextAnim
                         text={'XDR'}
@@ -58,7 +58,7 @@ function App() {
                         opacityProgress={[0, 1, 0.7, 0.5, 0]}
                         scaleProgress={[20, 10, 1, 1, 1]}
                         yPosProgress={[0, 0, 0, 0, 0]}
-                        top={'240px'}
+                        top={510}
                     />
                     <TextAnim
                         text={'5G'}
@@ -66,7 +66,7 @@ function App() {
                         opacityProgress={[0, 1, 0.7, 0.5, 0]}
                         scaleProgress={[20, 10, 1, 1, 1]}
                         yPosProgress={[0, 0, 0, 0, 0]}
-                        top={'330px'}
+                        top={600}
                     />
                     <TextAnim
                         text={'OMG.'}
@@ -74,7 +74,7 @@ function App() {
                         opacityProgress={[0, 1, 1, 0.5, 0]}
                         scaleProgress={[20, 10, 1, 1, 1]}
                         yPosProgress={[500, 200, 0, 0, 0]}
-                        top={'420px'}
+                        top={690}
                     />
                     <ImageAnim
                         animProgress={[0.36, 0.38, 0.4, 0.42, 0.44]}
