@@ -1,41 +1,37 @@
 import React from 'react';
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 
-const TextAnim = (props) => {
-    const { text, animProgress, opacityProgress, scaleProgress, yPosProgress, top } = props;
+const AnimatedDiv = (props) => {
+    const {
+        animProgress,
+        opacityProgress,
+        scaleProgress,
+        xPosProgress,
+        yPosProgress,
+        img,
+        text,
+        myStyle,
+    } = props;
     const { scrollYProgress } = useViewportScroll();
+
     const opacityAnim = useTransform(scrollYProgress, animProgress, opacityProgress);
     const scaleAnim = useTransform(scrollYProgress, animProgress, scaleProgress);
+    const xPosAnim = useTransform(scrollYProgress, animProgress, xPosProgress);
     const yPosAnim = useTransform(scrollYProgress, animProgress, yPosProgress);
-
-    const divStyle = {
-        width: '100%',
-        scale: 1,
-        position: 'fixed',
-        top: top,
-        display: 'flex',
-        justifyContent: 'center',
-    };
-
-    const textStyle = {
-        textAlign: 'center',
-        color: '#fff',
-        fontSize: '80px',
-        fontWeight: 600,
-    };
 
     return (
         <motion.div
             style={{
-                ...divStyle,
+                ...myStyle,
                 scale: scaleAnim,
+                x: xPosAnim,
                 y: yPosAnim,
                 opacity: opacityAnim,
             }}
         >
-            <div style={textStyle}>{text}</div>
+            {text ? text : <img src={img} alt='ipad' />}
         </motion.div>
     );
 };
 
-export default TextAnim;
+export default AnimatedDiv;

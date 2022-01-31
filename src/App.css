@@ -25,7 +25,13 @@
     width: 100%;
 }
 
-.LetterScene {
-    height: 250vh;
+.AnimationSection1 {
+    height: 100vh;
+    background-color: black;
+    /* border: 1px solid red; */
+}
+
+.AnimationSection2 {
+    height: 200vh;
     background-color: black;
 }

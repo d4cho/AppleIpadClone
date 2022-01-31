@@ -11,6 +11,7 @@ const ImageAnim = (props) => {
         zRotProgress,
         textAnimProgress,
         textOpacityProgress,
+        top,
     } = props;
     const { scrollYProgress } = useViewportScroll();
     const opacityAnim = useTransform(scrollYProgress, animProgress, opacityProgress);
@@ -22,7 +23,7 @@ const ImageAnim = (props) => {
         width: '100%',
         scale: 1,
         position: 'relative',
-        top: '200px',
+        top: top,
         display: 'flex',
         justifyContent: 'center',
         rotateZ: -10,
@@ -34,7 +35,7 @@ const ImageAnim = (props) => {
         fontSize: '21px',
         fontWeight: 600,
         position: 'relative',
-        top: '-120px',
+        top: top - 200,
         width: '41%',
         margin: '0 auto',
     };
