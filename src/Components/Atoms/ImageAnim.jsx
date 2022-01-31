@@ -27,16 +27,17 @@ const ImageAnim = (props) => {
         display: 'flex',
         justifyContent: 'center',
         rotateZ: -10,
+        left: 120,
     };
 
     const ipadDesc = {
         textAlign: 'center',
         color: '#fff',
-        fontSize: '21px',
+        fontSize: '35px',
         fontWeight: 600,
         position: 'relative',
-        top: top - 200,
-        width: '41%',
+        top: top - 50,
+        width: '64%',
         margin: '0 auto',
     };
 

@@ -79,12 +79,12 @@ function App() {
                     <ImageAnim
                         animProgress={[0.36, 0.38, 0.4, 0.42, 0.44]}
                         opacityProgress={[0, 1, 1, 1, 1]}
-                        scaleProgress={[1, 0.7, 0.5, 0.5, 0.5]}
+                        scaleProgress={[1, 0.85, 0.7, 0.7, 0.7]}
                         yPosProgress={[300, 0, 0, 0, 0]}
                         zRotProgress={[-20, -5, 0, 0, 0]}
                         textAnimProgress={[0.39, 0.4, 0.41]}
                         textOpacityProgress={[0, 0.5, 1]}
-                        top={700}
+                        top={800}
                     />
                 </section>
                 <section>
