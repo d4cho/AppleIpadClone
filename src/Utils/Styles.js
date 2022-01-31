@@ -21,15 +21,17 @@ export const animStyles = {
     superchargedGradient: {
         position: 'fixed',
         top: 610,
-        left: 480,
+        width: '100%',
         margin: '0 auto',
-        width: '25%',
-        background: '-webkit-linear-gradient(225deg, #ff5ea7 36%, #010fcb 88%, #ff6530 220%)',
+        background: '-webkit-linear-gradient(225deg, #ff5ea7 50%, #010fcb 54%, #ff6530 220%)',
         'background-attachment': 'fixed',
         '-webkit-background-clip': 'text',
+        display: 'flex',
+        justifyContent: 'center',
     },
 
     superchargedText: {
+        width: '30%',
         textAlign: 'center',
         fontSize: '30px',
         fontWeight: 600,

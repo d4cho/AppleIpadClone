@@ -23,7 +23,7 @@ function App() {
                     <AnimatedDiv
                         animProgress={[0, 0.05, 0.1]}
                         opacityProgress={[1, 0.8, 0]}
-                        scaleProgress={[1, 0.9, 0.8]}
+                        scaleProgress={[1, 0.8, 0.6]}
                         xPosProgress={[0, 0, 0]}
                         yPosProgress={[0, 0, 0]}
                         text={'iPad Pro'}
