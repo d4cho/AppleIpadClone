@@ -73,7 +73,6 @@ function App() {
                     />
                     <TextAnim
                         text={'M1'}
-                        // animProgress={[0.15, 0.175, 0.2, 0.34, 0.35]}
                         animProgress={[0.4, 0.425, 0.45, 0.59, 0.6]}
                         opacityProgress={[0, 1, 0.7, 0.5, 0]}
                         scaleProgress={[20, 10, 1, 1, 1]}
@@ -82,7 +81,6 @@ function App() {
                     />
                     <TextAnim
                         text={'XDR'}
-                        // animProgress={[0.2, 0.225, 0.25, 0.345, 0.355]}
                         animProgress={[0.45, 0.475, 0.5, 0.595, 0.605]}
                         opacityProgress={[0, 1, 0.7, 0.5, 0]}
                         scaleProgress={[20, 10, 1, 1, 1]}
@@ -91,7 +89,6 @@ function App() {
                     />
                     <TextAnim
                         text={'5G'}
-                        // animProgress={[0.25, 0.275, 0.3, 0.35, 0.36]}
                         animProgress={[0.5, 0.525, 0.55, 0.6, 0.61]}
                         opacityProgress={[0, 1, 0.7, 0.5, 0]}
                         scaleProgress={[20, 10, 1, 1, 1]}
@@ -100,7 +97,6 @@ function App() {
                     />
                     <TextAnim
                         text={'OMG.'}
-                        // animProgress={[0.3, 0.325, 0.35, 0.365, 0.37]}
                         animProgress={[0.55, 0.575, 0.6, 0.615, 0.62]}
                         opacityProgress={[0, 1, 1, 0.5, 0]}
                         scaleProgress={[20, 10, 1, 1, 1]}
@@ -108,13 +104,11 @@ function App() {
                         top={690}
                     />
                     <ImageAnim
-                        // animProgress={[0.36, 0.38, 0.4, 0.42, 0.44]}
                         animProgress={[0.61, 0.63, 0.65, 0.67, 0.69]}
                         opacityProgress={[0, 1, 1, 1, 1]}
                         scaleProgress={[1, 0.85, 0.7, 0.7, 0.7]}
                         yPosProgress={[300, 0, 0, 0, 0]}
                         zRotProgress={[-20, -5, 0, 0, 0]}
-                        // textAnimProgress={[0.39, 0.4, 0.41]}
                         textAnimProgress={[0.64, 0.65, 0.66]}
                         textOpacityProgress={[0, 0.5, 1]}
                         top={3900}
