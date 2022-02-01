@@ -37,7 +37,7 @@ const ImageAnim = (props) => {
         fontWeight: 600,
         position: 'relative',
         top: top - 50,
-        width: '64%',
+        width: 800,
         margin: '0 auto',
     };
 

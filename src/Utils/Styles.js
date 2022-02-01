@@ -31,7 +31,7 @@ export const animStyles = {
     },
 
     superchargedText: {
-        width: '30%',
+        width: 300,
         textAlign: 'center',
         fontSize: '30px',
         fontWeight: 600,

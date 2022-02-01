@@ -15,7 +15,7 @@ function App() {
                         animProgress={[0, 0.05, 0.1]}
                         opacityProgress={[1, 0.8, 0]}
                         scaleProgress={[0.5, 1.8, 1.8]}
-                        xPosProgress={[-200, 100, 100]}
+                        xPosProgress={[100, 1200, 1200]}
                         yPosProgress={[100, -850, -850]}
                         img={ipadSideImg}
                         myStyle={animStyles.ipadSide}
