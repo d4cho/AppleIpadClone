@@ -23,7 +23,7 @@ const ImageAnim = (props) => {
         width: '100%',
         scale: 1,
         position: 'relative',
-        top: top,
+        top: `${top}vh`,
         display: 'flex',
         justifyContent: 'center',
         rotateZ: -10,
@@ -36,7 +36,7 @@ const ImageAnim = (props) => {
         fontSize: '35px',
         fontWeight: 600,
         position: 'relative',
-        top: top - 50,
+        top: `${top - 5}vh`,
         width: 800,
         margin: '0 auto',
     };

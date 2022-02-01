@@ -1,5 +1,3 @@
-import bg5G from '../Assets/Images/5g-background.png';
-
 export const animStyles = {
     ipadSide: {
         width: '100%',

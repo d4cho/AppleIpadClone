@@ -7,8 +7,11 @@ import AnimatedDiv from './Components/Atoms/AnimatedDiv';
 import AnimFiveG from './Components/Atoms/AnimFiveG';
 import { animStyles } from './Utils/Styles';
 import bg5g from './Assets/Images/5g-background.png';
+// import useMediaQuery from '@mui/material/useMediaQuery';
 
-function App() {
+const App = () => {
+    // const matches = useMediaQuery('(min-width:1200px)');
+
     return (
         <div className='App'>
             <main className='Main'>
@@ -111,7 +114,7 @@ function App() {
                         zRotProgress={[-20, -5, 0, 0, 0]}
                         textAnimProgress={[0.64, 0.65, 0.66]}
                         textOpacityProgress={[0, 0.5, 1]}
-                        top={3900}
+                        top={350}
                     />
                 </section>
                 <section>
@@ -120,6 +123,6 @@ function App() {
             </main>
         </div>
     );
-}
+};
 
 export default App;
