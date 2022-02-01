@@ -1,13 +1,14 @@
 import './App.css';
-import ImageAnim from './Components/Atoms/ImageAnim';
-import TextAnim from './Components/Atoms/TextAnim';
-import EvenMoreReasons from './Components/Views/EvenMoreReasons';
+import ImageAnim from './MyComponents/Atoms/ImageAnim';
+import TextAnim from './MyComponents/Atoms/TextAnim';
+import EvenMoreReasons from './MyComponents/Views/EvenMoreReasons';
 import ipadSideImg from './Assets/Images/ipad-side.jpeg';
-import AnimatedDiv from './Components/Atoms/AnimatedDiv';
-import AnimFiveG from './Components/Atoms/AnimFiveG';
+import AnimatedDiv from './MyComponents/Atoms/AnimatedDiv';
+import AnimFiveG from './MyComponents/Atoms/AnimFiveG';
 import { animStyles } from './Utils/Styles';
 import bg5g from './Assets/Images/5g-background.png';
 // import useMediaQuery from '@mui/material/useMediaQuery';
+import AppLayout from './components/AppLayout';
 
 const App = () => {
     // const matches = useMediaQuery('(min-width:1200px)');
@@ -114,12 +115,22 @@ const App = () => {
                         zRotProgress={[-20, -5, 0, 0, 0]}
                         textAnimProgress={[0.64, 0.65, 0.66]}
                         textOpacityProgress={[0, 0.5, 1]}
-                        top={350}
+                        top={480}
                     />
                 </section>
-                <section>
-                    <EvenMoreReasons />
-                </section>
+                <div
+                    style={{
+                        width: '55vw',
+                        margin: '0 auto',
+                    }}
+                >
+                    <AppLayout />
+                </div>
+                <section
+                    style={{
+                        height: '100vh',
+                    }}
+                ></section>
             </main>
         </div>
     );

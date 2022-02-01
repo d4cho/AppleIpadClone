@@ -32,11 +32,231 @@
 }
 
 .FiveG-Animation-Section {
-    height: 500vh;
+    height: 600vh;
     background-color: black;
 }
 
 .test {
     /* border: 1px solid red; */
     height: 100vh;
+}
+
+/* integrated */
+
+.app-bar {
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255, 255, 255, 0.72) !important;
+    transition: background-color 0.5s;
+    transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
+}
+.app-title {
+    font-size: 21px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: 0.011em;
+    cursor: default;
+    display: block;
+    float: left;
+    margin: 14px 0 -14px;
+    padding: 0;
+    height: 52px;
+    white-space: nowrap;
+    color: #000;
+    opacity: 0.88;
+}
+.image-storage {
+    width: 767px;
+    height: 545px;
+    background-size: 833px 591px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/ca/ipad-pro/images/overview/storage__oieurqjp3siq_large.jpg);
+    border-bottom-left-radius: 25px;
+}
+
+.app-image-storage {
+    width: 96px;
+    height: 96px;
+    background-size: 96px 96px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/ipad-pro/ah/images/overview/even-more/app_store__dc2xlx99mqy6_medium.png);
+}
+.image-thunderbolt {
+    width: 615px;
+    height: 506px;
+    background-size: 615px 506px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/ipad-pro/ah/images/overview/even-more/thunderbolt__c4wnqy3cte0y_large.jpg);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.image-microphone {
+    width: 59px;
+    height: 86px;
+    background-size: 59px 86px;
+    background-repeat: no-repeat;
+    background-image: url(https://www.apple.com/v/ipad-pro/ah/images/overview/even-more/microphone__bdmm94iw4brm_large.png);
+}
+
+.image-audio {
+    width: 1025px;
+    height: 630px;
+    background-size: 1025px 630px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 3;
+    background-image: url(https://www.apple.com/v/ipad-pro/ah/images/overview/even-more/audio__djwxnxeybbo2_large.png);
+}
+
+.speaker-sprite {
+    background-image: url(https://www.apple.com/v/ipad-pro/ah/images/overview/even-more/audio_soundwave__eueg98ydagwi_large.png);
+    background-repeat: no-repeat;
+    width: 295px;
+    height: 295px;
+    background-size: 2950px 3540px;
+    background-position: 0px 0px;
+    animation: sound-wave-static-large 0.8333s steps(2) infinite;
+    /* animation-iteration-count: 20; */
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes sound-wave-static-large {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 0px -3540px;
+    }
+}
+
+.speaker-sprite.top-left {
+    top: -5px;
+    left: 10px;
+    transform: rotate(90deg);
+}
+
+.speaker-sprite.top-right {
+    top: -5px;
+    right: 10px;
+    transform: rotate(135deg);
+}
+
+.speaker-sprite.bottom-left {
+    bottom: -5px;
+    left: 10px;
+}
+
+.speaker-sprite.bottom-right {
+    bottom: -5px;
+    right: 10px;
+    transform: rotate(-90deg);
+}
+
+.text-gradient-blue {
+    background: -webkit-linear-gradient(#0f44a7, #65c2cf, #0f44a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+}
+
+.text-gradient-green {
+    background: -webkit-linear-gradient(#26a334, #1289a3, #26a334);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-attachment: fixed;
+}
+
+@media only screen and (min-width: 1069px) and (max-width: 1200px) {
+    .typography-even-more-headline {
+        font-size: 32px !important;
+        line-height: 1.125 !important;
+        font-weight: 600;
+        letter-spacing: 0.004em !important;
+    }
+    .image-thunderbolt {
+        background-image: url(https://www.apple.com/v/ipad-pro/ah/images/overview/even-more/thunderbolt__c4wnqy3cte0y_large_2x.jpg);
+        width: 530px !important;
+        height: 556px;
+        background-size: 550px 556px;
+        background-repeat: no-repeat;
+    }
+    .image-storage {
+        background-image: url(https://www.apple.com/ca/ipad-pro/images/overview/storage__oieurqjp3siq_large.jpg);
+        width: 590px;
+        height: 556px;
+        background-size: 550px 556px;
+        background-repeat: no-repeat;
+    }
+    .microphone-text {
+        padding-top: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 895px) and (max-width: 900px) {
+    .typography-even-more-headline {
+        font-size: 5px !important;
+        line-height: 0.6 !important;
+        font-weight: 200 !important;
+        letter-spacing: 0.002em !important;
+    }
+    .image-thunderbolt {
+        background-image: url(https://www.apple.com/v/ipad-pro/ah/images/overview/even-more/thunderbolt__c4wnqy3cte0y_large_2x.jpg);
+        width: 400px !important;
+        height: 335px;
+        margin-bottom: 40px !important;
+        background-size: 385px 330px;
+        background-repeat: no-repeat;
+    }
+    .image-audio {
+        width: 605px;
+        height: 330px;
+        background-size: 605px 330px;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 3;
+        background-image: url(https://www.apple.com/v/ipad-pro/ah/images/overview/even-more/audio__djwxnxeybbo2_large.png);
+    }
+    .thunderbolt-text {
+        font-size: 30px !important;
+    }
+    .feature-grid-container {
+        min-height: 650px !important;
+    }
+    .image-storage {
+        background-image: url(https://www.apple.com/ca/ipad-pro/images/overview/storage__oieurqjp3siq_medium_2x.jpg);
+        width: 332px;
+        height: 402px;
+        background-size: 332px 402px;
+        background-repeat: no-repeat;
+        margin-bottom: 40px !important;
+        background-position: -60px 0px;
+    }
+
+    .microphone-text {
+        padding-top: 2px !important;
+    }
+    .text-gradient-green {
+        font-size: 37px !important;
+    }
+    .microphone-container-text {
+        padding-top: 55px !important;
+    }
+}
+
+body {
+    font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial',
+        sans-serif;
+}
+
+.Gradient {
+    background: -webkit-linear-gradient(
+        150deg,
+        rgb(38, 163, 52) -89.01%,
+        rgb(18, 137, 163) 10.99%,
+        rgb(38, 163, 52) 110.99%
+    );
+    -webkit-background-clip: text;
+    background-attachment: fixed;
 }
