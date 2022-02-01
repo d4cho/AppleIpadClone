@@ -19,7 +19,7 @@ const ImageAnim = (props) => {
     const yPosAnim = useTransform(scrollYProgress, animProgress, yPosProgress);
     const zRotAnim = useTransform(scrollYProgress, animProgress, zRotProgress);
 
-    const divStyle = {
+    const ipadImageStyle = {
         width: '100%',
         scale: 1,
         position: 'relative',
@@ -30,7 +30,7 @@ const ImageAnim = (props) => {
         left: 120,
     };
 
-    const ipadDesc = {
+    const ipadDescStyle = {
         textAlign: 'center',
         color: '#fff',
         fontSize: '35px',
@@ -47,7 +47,7 @@ const ImageAnim = (props) => {
         <>
             <motion.div
                 style={{
-                    ...divStyle,
+                    ...ipadImageStyle,
                     scale: scaleAnim,
                     y: yPosAnim,
                     opacity: opacityAnim,
@@ -61,7 +61,7 @@ const ImageAnim = (props) => {
                     opacity: textOpacityAnim,
                 }}
             >
-                <div style={ipadDesc}>
+                <div style={ipadDescStyle}>
                     The ultimate iPad experience. Now with breakthrough M1 Performance, a
                     breathtaking XDR display and blazing-fast 5G wireless. Buckle up.
                 </div>

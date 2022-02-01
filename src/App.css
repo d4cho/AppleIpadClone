@@ -25,13 +25,18 @@
     width: 100%;
 }
 
-.AnimationSection1 {
+.Supercharged-Animation-Section {
     height: 100vh;
     background-color: black;
     /* border: 1px solid red; */
 }
 
-.AnimationSection2 {
-    height: 200vh;
+.FiveG-Animation-Section {
+    height: 400vh;
     background-color: black;
+}
+
+.test {
+    /* border: 1px solid red; */
+    height: 100vh;
 }
