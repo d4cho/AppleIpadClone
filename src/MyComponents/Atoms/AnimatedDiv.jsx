@@ -14,8 +14,16 @@ const AnimatedDiv = (props) => {
     } = props;
     const { scrollYProgress } = useViewportScroll();
 
-    const opacityAnim = useTransform(scrollYProgress, animProgress, opacityProgress);
-    const scaleAnim = useTransform(scrollYProgress, animProgress, scaleProgress);
+    const opacityAnim = useTransform(
+        scrollYProgress,
+        animProgress,
+        opacityProgress
+    );
+    const scaleAnim = useTransform(
+        scrollYProgress,
+        animProgress,
+        scaleProgress
+    );
     const xPosAnim = useTransform(scrollYProgress, animProgress, xPosProgress);
     const yPosAnim = useTransform(scrollYProgress, animProgress, yPosProgress);
 
